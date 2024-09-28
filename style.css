@@ -1,0 +1,160 @@
+/* Geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f0f8ff; /* Fundo branco com leve tom azul */
+}
+
+section img {
+  height: 200px;
+}
+
+/* Navegação */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0066cc; /* Azul claro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav__logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__links .link {
+  margin: 0 15px;
+}
+
+.nav__links a {
+  text-decoration: none;
+  color: #fff; /* Links em branco */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav__links a:hover {
+  color: #ffcc00; /* Hover amarelo */
+}
+
+.btn {
+  background-color: #00bfff; /* Botão azul mais claro */
+  color: #fff; /* Texto branco */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #009acd; /* Tom mais escuro de azul no hover */
+}
+
+/* Header */
+.header__container {
+  text-align: center;
+  padding: 50px 20px;
+  color: #333;
+  position: relative;
+  background-color: #e6f2ff; /* Fundo azul bem claro */
+}
+
+.header__image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.4; /* Imagem de fundo mais clara */
+}
+
+header p {
+  margin-bottom: 40px;
+}
+
+/* Cards */
+.explore__card {
+  background: #fff; /* Fundo branco */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  margin: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.2); /* Sombra azul clara */
+}
+
+.explore__card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.explore__card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 102, 204, 0.3); /* Sombra azul mais intensa no hover */
+}
+
+/* Container de cards */
+.explore__grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Cabeçalhos de seção */
+.section__header {
+  font-size: 2em;
+  color: #0066cc; /* Azul escuro */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.carousel__item {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.carousel__item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer__container {
+  text-align: center;
+  padding: 20px 20px;
+  background-color: #0066cc; /* Azul escuro */
+  color: #fff; /* Texto branco */
+}
+
+
+#personalizacao {
+  margin-bottom: 20px;
+}
+
+.logo-final {
+  height: 100px;
+}
