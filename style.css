@@ -1,160 +1,231 @@
 /* Geral */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background-color: #f0f8ff; /* Fundo branco com leve tom azul */
+    font-family: 'Arial', sans-serif; /* Fonte do corpo */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    color: #333; /* Cor do texto */
+    background-color: #b9c1cf; /* Fundo muito claro */
+   
 }
 
 section img {
-  height: 200px;
+    height: 300px; /* Ajusta automaticamente a altura das imagens nas seções */
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
 }
 
 /* Navegação */
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #0066cc; /* Azul claro */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex; /* Flexbox para disposição dos itens */
+    justify-content: space-between; /* Espaço entre logo e links */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 15px 30px; /* Preenchimento interno */
+    background-color: #5e35b1; /* Roxo para fundo da nav */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra da navegação */
+    position: sticky; /* Fixa a navegação no topo ao rolar */
+    top: 0; /* Fixa ao topo */
+    z-index: 1000; /* Garante que a nav fique acima de outros elementos */
 }
 
 .nav__logo img {
-  width: 50px;
-  height: 50px;
+    width: 70px; /* Largura da imagem do logo */
+    height: auto; /* Altura automática */
 }
 
 .nav__links {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Flexbox para links */
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove preenchimento padrão */
 }
 
 .nav__links .link {
-  margin: 0 15px;
+    margin: 0 20px; /* Margem lateral entre os links */
 }
 
 .nav__links a {
-  text-decoration: none;
-  color: #fff; /* Links em branco */
-  font-weight: bold;
-  transition: color 0.3s;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #fff; /* Cor dos links */
+    font-weight: 600; /* Peso da fonte dos links */
+    transition: color 0.3s, transform 0.3s; /* Transição suave para mudança de cor e transformação */
 }
 
 .nav__links a:hover {
-  color: #ffcc00; /* Hover amarelo */
+    color: #ffcc00; /* Cor dos links ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o link ao passar o mouse */
 }
 
+/* Botões */
 .btn {
-  background-color: #00bfff; /* Botão azul mais claro */
-  color: #fff; /* Texto branco */
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
+    background-color: #ab47bc; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 12px 25px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave para fundo e transformação */
+    border: none; 
+    display: inline-block; 
 }
 
 .btn:hover {
-  background-color: #009acd; /* Tom mais escuro de azul no hover */
+    background-color: #8e24aa; /* Cor do botão ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de levantamento no hover */
 }
 
 /* Header */
 .header__container {
-  text-align: center;
-  padding: 50px 20px;
-  color: #333;
-  position: relative;
-  background-color: #e6f2ff; /* Fundo azul bem claro */
+    text-align: center; /* Centraliza o texto */
+    padding: 70px 20px; /* Preenchimento interno */
+    color: #fff; /* Cor do texto */
+    position: relative; /* Posição relativa para controle de elementos internos */
+    background-color: #804fd4; /* Cor de fundo do header */
+    overflow: hidden; /* Esconde o transbordo */
 }
 
 .header__image {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0.4; /* Imagem de fundo mais clara */
+    width: 100%; /* Largura total da imagem */
+    height: auto; /* Altura automática */
+    opacity: 0.8; /* Transparência da imagem de fundo */
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+    filter: brightness(0.8); /* Escurece a imagem de fundo */
 }
 
-header p {
-  margin-bottom: 40px;
+.header__container h1 {
+    font-size: 3.5em; /* Tamanho do título */
+    margin: 20px 0; /* Margem acima e abaixo do título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para o título */
+}
+
+.header__container p {
+    font-size: 1.2em; /* Tamanho do texto */
+    max-width: 800px; /* Largura máxima do parágrafo */
+    margin: 0 auto; /* Centraliza o parágrafo */
+    line-height: 1.6; /* Melhor legibilidade */
 }
 
 /* Cards */
 .explore__card {
-  background: #fff; /* Fundo branco */
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  width: 300px;
-  margin: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.2); /* Sombra azul clara */
+    background: #ffffff; /* Fundo branco dos cards */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Preenchimento interno */
+    text-align: center; /* Centraliza o texto dentro dos cards */
+    width: 300px; /* Largura dos cards */
+    margin: 10px; /* Margem entre os cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição para efeito hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil dos cards */
 }
 
 .explore__card img {
-  width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s;
+    width: 100%; /* Largura total da imagem dentro do card */
+    border-radius: 10px; /* Bordas arredondadas na imagem */
+    transition: transform 0.3s; /* Transição para efeito hover na imagem */
 }
 
 .explore__card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 102, 204, 0.3); /* Sombra azul mais intensa no hover */
+    transform: translateY(-5px); /* Levanta levemente o card ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Sombra mais intensa no hover */
 }
 
 /* Container de cards */
 .explore__grid {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
+    display: flex; /* Flexbox para disposição dos cards */
+    justify-content: center; /* Centraliza os cards */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    gap: 20px; /* Espaçamento entre os cards */
 }
 
 /* Cabeçalhos de seção */
 .section__header {
-  font-size: 2em;
-  color: #0066cc; /* Azul escuro */
-  text-align: center;
-  margin-bottom: 20px;
+    font-size: 2.5em; /* Tamanho do cabeçalho da seção */
+    color: #ffffff; /* Cor do cabeçalho */
+    text-align: center; /* Centraliza o cabeçalho */
+    margin-bottom: 40px; /* Aumenta a margem abaixo do cabeçalho */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para o cabeçalho */
 }
 
 /* Carousel */
 .carousel {
-  display: flex;
-  overflow: hidden;
-  padding: 20px;
+    display: flex; /* Flexbox para o carousel */
+    overflow: hidden; /* Oculta o conteúdo que transborda */
+    padding: 20px; /* Preenchimento do carousel */
 }
 
 .carousel__item {
-  flex: 1;
-  margin: 0 10px;
-  text-align: center;
+    flex: 1; /* Flexível para cada item */
+    margin: 0 10px; /* Margem lateral entre os itens */
+    text-align: center; /* Centraliza o texto dos itens */
 }
 
 .carousel__item img {
-  width: 100%;
-  border-radius: 10px;
+    width: 100%; /* Largura total da imagem do item */
+    border-radius: 10px; /* Bordas arredondadas na imagem do item */
 }
 
 /* Footer */
 .footer__container {
-  text-align: center;
-  padding: 20px 20px;
-  background-color: #0066cc; /* Azul escuro */
-  color: #fff; /* Texto branco */
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 30px 20px; /* Preenchimento interno do rodapé */
+    background-color: #673ab7; /* Roxo escuro para o fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
 }
 
-
 #personalizacao {
-  margin-bottom: 20px;
+    margin-bottom: 20px; /* Margem abaixo da seção de personalização */
 }
 
 .logo-final {
-  height: 100px;
+    height: 80px; /* Altura da logo final */
 }
+
+/* Caixa de descrição */
+.description-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 25px; /* Preenchimento interno */
+    margin: 30px auto; /* Margem ajustada para mais espaçamento */
+    max-width: 600px; /* Largura máxima da box */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+    text-align: left; /* Alinhamento do texto à esquerda */
+    transition: transform 0.3s; /* Transição para efeito hover */
+}
+
+.description-box:hover {
+    transform: translateY(-5px); /* Efeito de levantamento no hover */
+}
+
+.description-box p {
+    margin: 15px 0; /* Margem entre os parágrafos */
+    line-height: 1.6; /* Melhor legibilidade */
+    font-size: 1.1em; /* Aumentando o tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilos Adicionais */
+a {
+    transition: color 0.3s; /* Transição suave para links */
+}
+
+a:hover {
+    color: #ffcc00; /* Hover amarelo para links */
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilo de animação para o carregamento de seções */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Começa invisível */
+    }
+    to {
+        opacity: 1; /* Termina visível */
+    }
+}
+
+.section__container {
+    animation: fadeIn 0.5s ease; /* Animação ao carregar as seções */
+}
+
+
